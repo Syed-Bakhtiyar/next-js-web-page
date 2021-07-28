@@ -21,9 +21,27 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div>
-            
+        <div className={` ${styles.mainNavContainer}`}>
+            <div className={styles.navContainer}>
+                <a className={`${styles.navItem}`}>Kreditvergleich</a>
+                <div className="dropdown">
+                    <a className={`nav-link dropdown-toggle ${styles.navItem}`} id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kredit</a>
+                    <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><a className="dropdown-item" href="#">Kreditrechner</a></li>
+                        <li><a className="dropdown-item" href="#">Umschuldung</a></li>
+                    </ul>
+                </div>
+                
+                <a className={`nav-link ${styles.navItem}`}>Autokredit</a>
+                <a className={`nav-link ${styles.navItem}`}>Ratenkredit</a>
+                <a className={`nav-link ${styles.navItem}`}>Baufinanzierung</a>
+                <a className={`nav-link ${styles.navItem}`}>Karriere</a>
+            </div>
+            <div className={styles.mainHeaderContent}>
+                <a className={styles.navContent}>Kundenbereich</a>
+            </div>
         </div>
+
     </div>
   )
 }

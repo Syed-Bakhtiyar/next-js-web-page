@@ -1,4 +1,54 @@
-.container {
+.mainFirstSectionContainer{
+  position: relative;
+}
+
+.bgImageStyling{
+  position: absolute;
+  /* max-width: 110%; */
+  width: 100%;
+  height: 539px;
+}
+
+.mainGridStyling{
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+.mainInfoContainer{
+  position: relative;
+    z-index: 1;
+}
+
+.mainContentInfoStyle{
+    text-align: center;
+    color: #165297;
+    display: block;
+    text-shadow: none;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.mainContentInfoStyleContent{
+    font-weight: normal;
+    margin-top: -15px;
+}
+
+.mainFormContainer{
+  height: 378px;
+  background: white;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.mainFormInputFieldsContainer{
+  margin-bottom: 20px !important;
+}
+
+.mainFormInputFields{
+  width: 100%;
+  background-color: #f5f6f8;
+}
+/* .container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -118,4 +168,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */

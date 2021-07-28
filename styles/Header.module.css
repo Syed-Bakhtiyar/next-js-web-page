@@ -48,3 +48,37 @@
 .mainHeaderContent:hover .infoTimings{
     overflow: unset;
 }
+
+.mainNavContainer{
+    margin-top: 12px;
+    margin-left: 65px;
+    display: flex;
+}
+
+.navContainer{
+    display: flex;
+}
+
+.navItem{
+    margin-right: 10px;
+    padding: 0;
+    color: #62686e !important;
+}
+
+.navContent{
+    font-size: 14px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: #165297 !important;
+    display: block;
+    text-align: right;
+}
+
+
+
+
+
+.headerNavUl{
+    white-space:nowrap;
+    list-style-type: none;
+}
