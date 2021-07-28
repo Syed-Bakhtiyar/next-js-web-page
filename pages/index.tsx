@@ -3,7 +3,8 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Header from './core/components/header/header';
 import bgImage from '../public/assets/bg-image.webp';
-import { FormControl, TextField, Select, InputLabel, MenuItem } from '@material-ui/core';
+import { FormControl, TextField, Select, InputLabel, MenuItem, Button } from '@material-ui/core';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 // import TextField from '@material-ui/core/TextField';
 console.log({bgImage});
 
@@ -50,7 +51,7 @@ export default function Home() {
                         id="demo-simple-select"
                       >
                         {
-                          laufZeits.map(laufzeit => <MenuItem value={laufzeit}>{laufzeit} Jahre</MenuItem>)
+                          laufZeits.map(laufzeit => <MenuItem value={laufzeit}>{laufzeit}&nbsp; Jahre</MenuItem>)
                         }
                       </Select>
                     </FormControl>
@@ -66,8 +67,42 @@ export default function Home() {
                         }
                       </Select>
                     </FormControl>
+                    <div className={`${styles.mainFormInputFieldsContainer} ${styles.formWarningContainer}`}>
+                        <div className={styles.formWarningHeading}>
+                          Günstigster Kredit aus über 60 Angeboten ab:
+                        </div>
+                        <div className={`${styles.formWarningHeading} ${styles.formWarningContent}`}>
+                          Günstigster Kredit aus über 60 Angeboten ab:
+                        </div>
+                    </div>
+                    <Button className={`${styles.mainFormInputFields} ${styles.mainFormInputFieldsContainer} ${styles.mainFormSubmitBtnStyling}`}>
+                      <div style={{display: 'flex'}}>
+                        <span>
+                          Kreditvergleich starten
+                        </span>
+                        <ArrowForwardIcon className={styles.arrowSubmitBtn}/>
+                      </div>
+                      <div className={styles.btnContent}>
+                        (Kostenlos und unverbindlich)
+                      </div>
+                    </Button>
                     {/* <TextField className={styles.mainFormInputFields} id="standard-basic" label="Wunschbetrag" />
                     <TextField className={styles.mainFormInputFields} id="standard-basic" label="Wunschbetrag" /> */}
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-sm-12">
+              <div className={styles.homeCircleContainer}>
+                <div className={styles.homeCircle}>
+                    <div>
+                      Schon ab
+                    </div>
+                    <h1>
+                      -0,4%
+                    </h1>
+                    <div>
+                      effektiver Jahreszins¹
+                    </div>
                 </div>
               </div>
             </div>
