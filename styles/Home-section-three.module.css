@@ -10,7 +10,15 @@
 .ideaContainer{
   background-color: #7397c1;
   color: white;
+  padding-right: 20px;
   padding-top: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+
+}
+
+.ideasHeadingStyling{
+  margin-bottom: 25px;
 }
 
 .ideaImageContainer{

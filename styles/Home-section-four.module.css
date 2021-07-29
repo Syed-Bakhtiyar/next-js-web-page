@@ -168,3 +168,30 @@
 .bolder{
   font-weight: 600 !important;
 }
+
+.phoneContainer{
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #F5F6F7;
+  cursor: pointer;
+}
+
+.phoneContainer:hover .roundCallButtonContainer{
+  border: 1px solid #165297;
+}
+
+.roundCallButtonContainer{
+  background-color: white;
+  align-items: center;
+  border: 2px solid #E5E8EA;
+  border-radius: 50%;
+  color: #165297;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding: 0;
+  transition: border-color 300ms;
+  width: 40px;
+  margin-right: 5px;
+}

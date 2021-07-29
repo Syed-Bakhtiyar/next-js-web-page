@@ -10,12 +10,12 @@ export default function HomeSectionThree() {
                  'Mit FINANZCHECK.de gelangen Sie sicher und mühelos an Ihr Wunschdarlehen'];
   return (
     <Box>
-      <Box className={`${styles.flexBoxDisplay} ${styles.sectionTwoGridStyling}`}>
+      <Box className={`${styles.flexBoxDisplay} ${styles.sectionTwoGridStyling} ${styles.ideasHeadingStyling}`}>
           <h3 className={`${styles.blueColor}`}>
             Die FINANZCHECK.de Vorteile im Überblick
           </h3>
       </Box>
-      <Box className={`${styles.flexBoxDisplay} ${styles.sectionTwoGridStyling} ${styles.ideaContainer}`}>
+      <Box className={`${styles.flexBoxDisplay} ${styles.ideaContainer}`}>
         <Box className={`${styles.ideaImageContainer}`}>
           <img src={ideaIc.src}/>
         </Box>
@@ -55,11 +55,12 @@ export default function HomeSectionThree() {
           </h4>
       </Box>
       <Box className={`${styles.flexBoxDisplay} ${styles.sectionTwoGridStyling}`}>
-        <Box>
+        {/* <Box>
             <img className={styles.zertifikatImageStyling} src={zertifikatImage.src}/>
-        </Box>
-        <p className={`${styles.ideasParaStyling}`}>
-          Wir legen größten Wert auf den Schutz Ihrer Daten. Wir wissen Ihr Vertrauen zu schätzen. Daher ist uns der gewissenhafte Umgang mit Ihren sensiblen Daten auch enorm wichtig. Unsere hohen Standards im Bereich der Datensicherheit haben wir daher auch dieses Jahr wieder für Sie vom <a className={`${styles.paragraphAnchor}`} href="https://www.tuev-saar.de/zertifikat/tk43790/"><u>TÜV Saarland</u></a> prüfen lassen.
+        </Box> */}
+        <p className={`${styles.flexBoxDisplay} ${styles.ideasParaStyling}`}>
+          <img className={styles.zertifikatImageStyling} src={zertifikatImage.src}/> 
+          <span>Wir legen größten Wert auf den Schutz Ihrer Daten. Wir wissen Ihr Vertrauen zu schätzen. Daher ist uns der gewissenhafte Umgang mit Ihren sensiblen Daten auch enorm wichtig. Unsere hohen Standards im Bereich der Datensicherheit haben wir daher auch dieses Jahr wieder für Sie vom <a className={`${styles.paragraphAnchor}`} href="https://www.tuev-saar.de/zertifikat/tk43790/"><u>TÜV Saarland</u></a> prüfen lassen.</span>
         </p>
       </Box>
 
