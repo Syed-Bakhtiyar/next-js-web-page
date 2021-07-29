@@ -30,6 +30,15 @@
   color: #7B8A96;
 }
 
+.widthSpecification{
+  margin-left: 125px;
+  max-width: 780px;
+}
+
+.zertifikatImageStyling{
+  margin-right: 10px;
+}
+
 .blueColor{
   color: #165297;
 }
