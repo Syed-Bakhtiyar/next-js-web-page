@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import {Header, HomeSectionOne, HomeSectionTwo} from './core/components';
+import {Header, HomeSectionOne, HomeSectionTwo, HomeSectionThree} from './core/components';
 import bgImage from '../public/assets/bg-image.webp';
 
 // import TextField from '@material-ui/core/TextField';
@@ -25,6 +25,7 @@ export default function Home() {
       <main>
         <HomeSectionOne/>
         <HomeSectionTwo/>
+        <HomeSectionThree/>
       </main>
 
       {/* <footer className={styles.footer}>
