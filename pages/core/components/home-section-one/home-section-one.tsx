@@ -3,16 +3,17 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import styles from '../../../../styles/Home-section-one.module.css';
 import bgImage from '../../../../public/assets/bg-image.webp';
+import Box from '@material-ui/core/Box';
 
 export default function HomeSectionOne() {
   const laufZeits = [1,2,3,4,5,6,7,8,9,10];
   const verwendungszwecks = ['Umschuldung', 'Gebrauchtfahrzeug', 'Neufahrzeug', 'Einrichtung/Möbel', 'Renovierung', 'Urlaub', 'PC/TV/Hifi/Video', 'Ausgleich Girokonto', 'Umzug', 'Immobilienfinanzierung', 'Freie Verwendung'];
   return (
-    <div className={styles.mainFirstSectionContainer}>
+    <Box className={styles.mainFirstSectionContainer}>
           <img className={styles.bgImageStyling} src={bgImage.src}/>
-          <div className={`row ${styles.mainGridStyling}`}>
-            <div className="col-md-6 col-sm-12">
-              <div className={styles.mainInfoContainer}>
+          <Box className={`row ${styles.mainGridStyling}`}>
+            <Box className="col-md-6 col-sm-12">
+              <Box className={styles.mainInfoContainer}>
                 <p className={styles.mainContentInfoStyle}>
                   Die Kreditexperten
                 </p>
@@ -20,7 +21,7 @@ export default function HomeSectionOne() {
                   Online vergleichen, persönlich beraten
                 </p>
 
-                <div className={styles.mainFormContainer}>
+                <Box className={styles.mainFormContainer}>
                     <FormControl className={`${styles.mainFormInputFields} ${styles.mainFormInputFieldsContainer}`} >
                       <TextField className={styles.mainFormInputFields} id="standard-basic" label="Wunschbetrag" />
                     </FormControl>
@@ -48,62 +49,62 @@ export default function HomeSectionOne() {
                         }
                       </Select>
                     </FormControl>
-                    <div className={`${styles.mainFormInputFieldsContainer} ${styles.formWarningContainer}`}>
-                        <div className={styles.formWarningHeading}>
+                    <Box className={`${styles.mainFormInputFieldsContainer} ${styles.formWarningContainer}`}>
+                        <Box className={styles.formWarningHeading}>
                           Günstigster Kredit aus über 60 Angeboten ab:
-                        </div>
-                        <div className={`${styles.formWarningHeading} ${styles.formWarningContent}`}>
+                        </Box>
+                        <Box className={`${styles.formWarningHeading} ${styles.formWarningContent}`}>
                           Günstigster Kredit aus über 60 Angeboten ab:
-                        </div>
-                    </div>
+                        </Box>
+                    </Box>
                     <Button className={`${styles.mainFormInputFields} ${styles.mainFormInputFieldsContainer} ${styles.mainFormSubmitBtnStyling}`}>
-                      <div style={{display: 'flex'}}>
+                      <Box style={{display: 'flex'}}>
                         <span>
                           Kreditvergleich starten
                         </span>
                         <ArrowForwardIcon className={styles.arrowSubmitBtn}/>
-                      </div>
-                      <div className={styles.btnContent}>
+                      </Box>
+                      <Box className={styles.btnContent}>
                         (Kostenlos und unverbindlich)
-                      </div>
+                      </Box>
                     </Button>
                     {/* <TextField className={styles.mainFormInputFields} id="standard-basic" label="Wunschbetrag" />
                     <TextField className={styles.mainFormInputFields} id="standard-basic" label="Wunschbetrag" /> */}
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-sm-12">
-              <div className={styles.homeCircleContainer}>
-                <div className={styles.homeCircle}>
-                    <div>
+                </Box>
+              </Box>
+            </Box>
+            <Box className="col-md-6 col-sm-12">
+              <Box className={styles.homeCircleContainer}>
+                <Box className={styles.homeCircle}>
+                    <Box>
                       Schon ab
-                    </div>
+                    </Box>
                     <h1>
                       -0,4%
                     </h1>
-                    <div>
+                    <Box>
                       effektiver
-                    </div>
-                    <div>
+                    </Box>
+                    <Box>
                       Jahreszins¹
-                    </div>
-                </div>
-                <div className={styles.listContainer}>
-                  <div className={styles.flexBox}>
+                    </Box>
+                </Box>
+                <Box className={styles.listContainer}>
+                  <Box className={styles.flexBox}>
                     <CheckCircleIcon className={styles.checkIcon}/> &nbsp; &nbsp; <span>100% kostenlos</span>
-                  </div>
-                  <div className={styles.flexBox}>
+                  </Box>
+                  <Box className={styles.flexBox}>
                     <CheckCircleIcon className={styles.checkIcon}/> &nbsp; &nbsp; <span>Unverbindliche Kreditanfrage</span>
-                  </div>
-                  <div className={styles.flexBox}>
+                  </Box>
+                  <Box className={styles.flexBox}>
                     <CheckCircleIcon className={styles.checkIcon}/> &nbsp; &nbsp; <span>99,3% positive Bewertungen</span>
-                  </div>
-                </div>
-              </div>
+                  </Box>
+                </Box>
+              </Box>
               
-            </div>
-          </div>
+            </Box>
+          </Box>
           {/* <Image  src={bgImage} objectFit="cover"/> */}
-        </div>
+        </Box>
   )
 }
