@@ -59,6 +59,12 @@
   color: #165297;
 }
 
+.footerHeadings{
+  color: #165297;
+  font-weight: 600 !important;
+  margin-bottom: 20px !important;
+}
+
 .sectionTwoIconsContainerStyling{
   margin-left: 20px;
 }
@@ -150,6 +156,15 @@
 }
 
 .paragraphAnchor{
-  color: #165297;
+  color: #7B8A96 !important;
   cursor: pointer;
+
+}
+
+.marginTop{
+  margin-top: 10px;
+}
+
+.bolder{
+  font-weight: 600 !important;
 }

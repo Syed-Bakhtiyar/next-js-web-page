@@ -54,7 +54,7 @@ export default function HomeSectionThree() {
             Weil Ihre Daten bei uns sicher sind
           </h4>
       </Box>
-      <Box className={`${styles.flexBoxDisplay} ${styles.sectionTwoGridStyling} ${styles.widthSpecification}`}>
+      <Box className={`${styles.flexBoxDisplay} ${styles.sectionTwoGridStyling}`}>
         <Box>
             <img className={styles.zertifikatImageStyling} src={zertifikatImage.src}/>
         </Box>
