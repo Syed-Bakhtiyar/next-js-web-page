@@ -68,8 +68,6 @@ export default function HomeSectionOne() {
                         (Kostenlos und unverbindlich)
                       </Box>
                     </Button>
-                    {/* <TextField className={styles.mainFormInputFields} id="standard-basic" label="Wunschbetrag" />
-                    <TextField className={styles.mainFormInputFields} id="standard-basic" label="Wunschbetrag" /> */}
                 </Box>
               </Box>
             </Box>
@@ -104,7 +102,6 @@ export default function HomeSectionOne() {
               
             </Box>
           </Box>
-          {/* <Image  src={bgImage} objectFit="cover"/> */}
         </Box>
   )
 }

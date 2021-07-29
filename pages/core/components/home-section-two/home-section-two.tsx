@@ -1,5 +1,3 @@
-import { FormControl, TextField, Select, InputLabel, MenuItem, Button } from '@material-ui/core';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { useState } from 'react';
@@ -12,8 +10,6 @@ import Box from '@material-ui/core/Box';
 
 let index = 0;
 export default function HomeSectionTwo() {
-  const laufZeits = [1,2,3,4,5,6,7,8,9,10];
-  const verwendungszwecks = ['Umschuldung', 'Gebrauchtfahrzeug', 'Neufahrzeug', 'Einrichtung/Möbel', 'Renovierung', 'Urlaub', 'PC/TV/Hifi/Video', 'Ausgleich Girokonto', 'Umzug', 'Immobilienfinanzierung', 'Freie Verwendung'];
   const carouselItems = [
     'Die Beratung war sehr freundlich. Leider war die Änderung der Telefonnum...',
     'Ich war und bin mit der Beratung vom Herrn Rein sehr zufrieden. So stel...',
@@ -29,8 +25,6 @@ export default function HomeSectionTwo() {
     'Sehr sehr sehr zufrieden schnell und zuverlässig herzlichen Dank'
   ];
   const [displayedCarouselItem, setDisplayCarouselItem] = useState(carouselItems.slice(0, 3));
-
-  
 
   const nextPrevious = (action: String) => {
     if(action === 'next'){
