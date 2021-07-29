@@ -1,16 +1,58 @@
-import styles from '../../../../styles/Home-section-three.module.css';
+import styles from '../../../../styles/Home-section-four.module.css';
 import ideaIc from '../../../../public/assets/idea-ic.png';
 import zertifikatImage from '../../../../public/assets/Zertifikat.png'
 import Box from '@material-ui/core/Box';
+import goldIcon from '../../../../public/assets/ekomi_gold_siegel_finanzcheck_de.png';
+import pageBuilderIcon from '../../../../public/assets/bewertet_pagebuilder_2020.png';
+import trustPilotIcon from '../../../../public/assets/trustpilot_pagebuilder_2020.png';
+import expertIcon from '../../../../public/assets/provenexpert_pagebuilder_2020.png';
+import pageBuilder from '../../../../public/assets/ausgezeichnet_pagebuilder_2020.png';
 
-export default function HomeSectionThree() {
+export default function HomeSectionFour() {
   const ideas = ['Wir bieten Ihnen einen unabhängigen und kostenlosen Vergleich von Kreditangeboten', 
                  'Wir holen für Sie individuelle Kreditangebote ein. Unsere Kreditanfragen sind SCHUFA-neutral, also ohne negative Auswirkung auf Ihren SCHUFA-Score', 
                  'Zusätzlich bieten wir Ihnen weitere Dienstleistungen rund um Ihren Kreditwunsch, z. B. unsere individuelle telefonische Beratung und technische Unterstützung, um die Bearbeitung Ihrer Kreditanfrage durch die Bank zu beschleunigen', 
                  'Mit FINANZCHECK.de gelangen Sie sicher und mühelos an Ihr Wunschdarlehen'];
   return (
     <Box>
-      <Box className={`${styles.flexBoxDisplay} ${styles.sectionTwoGridStyling}`}>
+
+      <Box className={`row ${styles.sectionTwoGridStyling}`}>
+        <Box className="col-md-6 col-sm-12">
+          <Box >
+            <p className={`${styles.imgFollowByParaContainer}`}>
+              <img className={`${styles.imagePara}`} src={goldIcon.src}/>              
+              <span>eKomi ist ein unabhängiges Bewertungssystem, welches Kunden ermöglicht, FINANZCHECK.de zu bewerten und auch Kommentare zu hinterlassen. Unsere eKomi-Bewertungen beweisen: Über 15.000 Kunden bewerten unseren Service positiv. Unsere effiziente und kompetente Kreditabwicklung bringt Sie schnell auf den Weg zu Ihrem Wunschkredit.</span>
+            </p>
+          </Box>
+          <Box >
+            <p className={`${styles.imgFollowByParaContainer}`}>
+              <img className={`${styles.imagePara}`} src={pageBuilderIcon.src}/>              
+              <span>Wenn es um Vertrauen geht, sind unsere Kunden bei uns in den besten Händen. Das zeigen nicht nur die positiven Bewertungen auf Bewertet.de, sondern auch die Weiterempfehlungen unserer zufriedenen Kunden. Mit Bewertet.de haben gerade Neukunden den Vorteil, Erfahrungsberichte und Bewertungen über FINANZCHECK.de zu lesen und auch selbst Beurteilungen zu verfassen. Dies ist nicht nur für Sie als Kunde optimal. Auch wir als Dienstleister können somit auf Feedback eingehen und unseren Service für Sie noch weiter verbessern.</span>
+            </p>
+          </Box>
+        </Box>
+        <Box className="col-md-6 col-sm-12">
+          <Box >
+            <p className={`${styles.imgFollowByParaContainer}`}>
+              <img className={`${styles.imagePara}`} src={trustPilotIcon.src}/>              
+              <span>Die Community von Trustpilot sieht uns als kompetenten und vertrauenswürdigen Dienstleister an. Das fördert nicht nur unsere Beziehung zu unseren Kunden, sondern bietet diesen auch völlige Transparenz unseres Angebotes. Mit der Bewertungscommunity Trustpilot haben Sie als Kunde die Gelegenheit, FINANZCHECK.de besser kennenzulernen und von authentischem Feedback zu profitieren.</span>
+            </p>
+          </Box>
+          <Box >
+            <p className={`${styles.imgFollowByParaContainer}`}>
+              <img className={`${styles.imagePara}`} src={expertIcon.src}/>              
+              <span>Auch die von Kunden abgegebenen Bewertungen und Kommentare auf ProvenExpert sprechen für sich: Sowohl unsere Beratung als auch die Kreditabwicklung werden durchweg positiv von unseren Kunden bewertet. Dadurch können Sie sich sicher sein, dass Sie mit uns schnell und mühelos zu Ihrem Wunschkredit gelangen.</span>
+            </p>
+          </Box>
+          <Box >
+            <p className={`${styles.imgFollowByParaContainer}`}>
+              <img className={`${styles.imagePara}`} src={pageBuilder.src}/>              
+              <span>Mit Ausgezeichnet.org haben Sie als Kunde die Möglichkeit, sich selbst ein Bild von uns zu machen. Wie zufrieden waren Kunden mit unserer Beratung, unserem Service und dem Angebot an Krediten. Diese und andere Fragen werden auf ausgezeichnet.org beantwortet.</span>
+            </p>
+          </Box>
+        </Box>
+      </Box>
+      {/* <Box className={`${styles.flexBoxDisplay} ${styles.sectionTwoGridStyling}`}>
           <h3 className={`${styles.blueColor}`}>
             Die FINANZCHECK.de Vorteile im Überblick
           </h3>
@@ -94,7 +136,7 @@ export default function HomeSectionThree() {
         <p className={`${styles.ideasParaStyling}`}>
           99,3 Prozent der Kreditnehmer sind mit unseren Leistungen absolut zufrieden. Damit haben wir als Onlinevergleichsportal eine überdurchschnittlich hohe Kundenzufriedenheit. Damit dies auch so bleibt und wir in Zukunft noch besser werden, arbeiten wir jeden Tag daran, unseren Service für Sie weiter zu verbessern.
         </p>
-      </Box>
+      </Box> */}
     </Box>
   )
 }
