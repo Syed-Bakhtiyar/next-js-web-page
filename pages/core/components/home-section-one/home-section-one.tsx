@@ -33,7 +33,7 @@ export default function HomeSectionOne() {
                         id="demo-simple-select"
                       >
                         {
-                          laufZeits.map(laufzeit => <MenuItem value={laufzeit}>{laufzeit}&nbsp; Jahre</MenuItem>)
+                          laufZeits.map(laufzeit => <MenuItem value={laufzeit}>{laufzeit}&nbsp; Jahr{laufzeit === 1 ? '' : 'e'}</MenuItem>)
                         }
                       </Select>
                     </FormControl>

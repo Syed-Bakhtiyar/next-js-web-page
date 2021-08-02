@@ -1,18 +1,12 @@
 import styles from '../../../../styles/Footer.module.css';
-import ideaIc from '../../../../public/assets/idea-ic.png';
-import zertifikatImage from '../../../../public/assets/Zertifikat.png'
 import Box from '@material-ui/core/Box';
 
 export default function Footer() {
-  const ideas = ['Wir bieten Ihnen einen unabhängigen und kostenlosen Vergleich von Kreditangeboten', 
-                 'Wir holen für Sie individuelle Kreditangebote ein. Unsere Kreditanfragen sind SCHUFA-neutral, also ohne negative Auswirkung auf Ihren SCHUFA-Score', 
-                 'Zusätzlich bieten wir Ihnen weitere Dienstleistungen rund um Ihren Kreditwunsch, z. B. unsere individuelle telefonische Beratung und technische Unterstützung, um die Bearbeitung Ihrer Kreditanfrage durch die Bank zu beschleunigen', 
-                 'Mit FINANZCHECK.de gelangen Sie sicher und mühelos an Ihr Wunschdarlehen'];
   return (
     <Box className={`${styles.footerContainer} ${styles.sectionTwoGridStyling}`}>
       <Box className={`${styles.lockContainer}`}>
         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" className="css-zbrbd5 e10s4j7g3" height="12" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></svg>
-        &nbsp; &nbsp; © 2021 FINANZCHECK.de &nbsp; <Box className={`${styles.pixelDot}`}></Box> &nbsp;&nbsp; <Box>Admiralitätstraße 60 - 20459 Hamburg</Box>
+        &nbsp; &nbsp; © {new Date().getFullYear()} FINANZCHECK.de &nbsp; <Box className={`${styles.pixelDot}`}></Box> &nbsp;&nbsp; <Box>Admiralitätstraße 60 - 20459 Hamburg</Box>
         
       </Box>
       <Box className={`${styles.footerIconContainer}`}>
